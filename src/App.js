@@ -53,17 +53,17 @@ const App = () => {
   }
   return (
     <div className="app">
-      <div style={{display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '10px', flexWrap: 'wrap'}}>
-      <p style={{width: '20%', padding: '5px 10px', backgroundColor:'#c3c3c3'}} onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
+      <div className="questions" >
+      <p onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
       How do you ensure confidentiality and privacy during therapy?
       </p>
-      <p style={{width: '20%', padding: '5px 10px', backgroundColor:'#c3c3c3'}} onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
+      <p onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
       What are your qualifications and experience as a therapy assistant?
       </p>
-      <p style={{width: '20%', padding: '5px 10px', backgroundColor:'#c3c3c3'}} onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
+      <p onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
       How long will therapy take and how often will I need to attend sessions?
       </p>
-      <p style={{width: '20%', padding: '5px 10px', backgroundColor:'#c3c3c3'}} onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
+      <p onClick={(e)=> setValue(e.target.textContent)} disabled={!chatHistory}>
       What is the cost of therapy and do you accept insurance?
       </p>
       </div>

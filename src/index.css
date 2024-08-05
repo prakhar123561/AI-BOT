@@ -26,20 +26,24 @@ p {
 
 }
 
-.search-result {
-  margin: 10px;
-  overflow-y: scroll;
-  margin-bottom: 5px;
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.surprise {
-  background-color: #ece7f1;
-  color: #000;
-  font-weight: 600;
-  padding: 4px 12px;
-  border-radius: 5px;
-  margin: 0 0 2px 5px;
-  border: none;
+.questions p {
+  width: 20%;
+  padding: 5px 10px;
+  background-color: #c3c3c3;
+  cursor: pointer;
+}
+
+.search-result {
+  margin: 10px;
+  margin-bottom: 5px;
 }
 
 .input-container {
@@ -48,7 +52,6 @@ p {
   box-sizing: border-box;
   border: solid 0.5px #cacaca;
   box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -89,14 +92,27 @@ p {
   background-color: #fff;
 }
 
-@media (max-width: 1200px) {
- 
 
-  .app {
-    width: 60vw;
-    height: 80vh;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 700px) {
+  
+
+  .questions p {
+    width: 95%;
   }
+  
+  .app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .app p {
+    background-color: #f0f0f0; /* changed to a lighter color */
+    color: #333; /* added text color */
+  }
+
 }
